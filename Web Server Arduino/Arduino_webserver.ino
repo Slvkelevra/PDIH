@@ -92,7 +92,6 @@ void loop(){
                   client.println("</head>");
                   //Color de fondo
                   client.println("<body style=background-color:#00ffff>");
-                  //cliente.println("<body width=100% height=100%>");
                   client.println("<center>");
                   client.println("<strong><font size=300>WebServer Arduino. PDIH</font></strong>");
               
@@ -109,9 +108,9 @@ void loop(){
                   client.print("</html>");
           }
     
-          //clearing string for next read
+          //Reseteamos el string 
           readString="";
-          //stopping client
+          //Paramos el cliente para la siguiente lectura
           client.stop();
             
     
