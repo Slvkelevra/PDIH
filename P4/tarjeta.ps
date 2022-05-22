@@ -1,0 +1,71 @@
+%!PS
+
+%%************* RECTÁNGULO DE LA TARJETA
+newpath 
+75 350 moveto % move pointer to (x,y)=(10,200)
+450 0 rlineto %% Linea de abajo
+0 300 rlineto %% La lateral derecha
+-450 0 rlineto %% la de abajo
+0 -300 rlineto %% La lateral izquierda
+0.90 0.90 0.90 setrgbcolor
+fill
+
+5 setlinewidth
+closepath
+
+stroke
+
+%% CIRCULO IZQUIERDO EXTERIOR
+newpath
+160 560 60 0 360 arc
+0 0 0 setrgbcolor fill
+%% CIRCULO INTERIOR
+160 560 56 0 360 arc closepath
+0 0.7 0 setrgbcolor fill
+%% CIRCULO INTERIOR
+160 560 50 0 360 arc closepath
+0 0 0 setrgbcolor fill
+
+%%************** TEXTO
+/Times-Roman findfont % La fuente
+40 scalefont % Escalar 20 puntos la fuente
+setfont
+newpath 
+350 560 moveto 
+(PDIH) show 
+stroke
+
+%%************** TEXTO
+/Times-Roman findfont % La fuente
+23 scalefont % Escalar 20 puntos la fuente
+setfont
+newpath 
+280 530 moveto 
+(Amante de los perifericos) show 
+stroke
+
+%%************** TEXTO FRANCISCO
+/Times-Roman findfont % La fuente
+20 scalefont % Escalar 20 puntos la fuente
+setfont
+newpath 
+320 470 moveto 
+(Francisco Lara Marin) show 
+stroke
+
+%%************** TEXTO ALVARO
+/Times-Roman findfont % La fuente
+20 scalefont % Escalar 20 puntos la fuente
+setfont
+newpath 
+325 450 moveto 
+(Alvaro Marin Perez) show 
+stroke
+
+showpage
+
+
+
+
+
+

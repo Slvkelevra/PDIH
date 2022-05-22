@@ -1,0 +1,78 @@
+%!PS
+
+%%************* PARTE DE ABAJO DE LA CASUCHA
+newpath 
+150 300 moveto % move pointer to (x,y)=(10,200)
+300 0 rlineto %% Linea de abajo
+0 250 rlineto %% La lateral derecha
+-300 0 rlineto %% la de abajo
+0 -250 rlineto %% La lateral izquierda
+
+closepath
+5 setlinewidth
+stroke
+
+%%************* TEJADO DE LA CASUCHA
+newpath
+100 550 moveto %% Nos colocamos en la izquierda de la base del tejado
+400 0 rlineto %% Linea de abajo del tejado. 400 hacia la derecha
+-200 200 rlineto %% 200 para arriba y 200 para la izquierda
+-200 -200 rlineto %% 200 para abajo y 200 para la izquierda
+0.7 0.1 0.0 setrgbcolor
+fill
+closepath
+
+5 setlinewidth
+stroke
+
+%%************* VENTANA IZQUIERDA 
+newpath
+200 500 moveto
+50 0 rlineto
+0 -50 rlineto
+-50 0 rlineto
+0 50 rlineto
+0.5 0.2 0.0 setrgbcolor
+fill
+closepath
+
+5 setlinewidth
+stroke
+
+%%************* VENTANA DERECHA 
+newpath
+350 500 moveto
+50 0 rlineto
+0 -50 rlineto
+-50 0 rlineto
+0 50 rlineto
+0.5 0.2 0.0 setrgbcolor
+fill
+closepath
+
+5 setlinewidth
+stroke
+
+%%************ LA PUERTA
+newpath
+275 300 moveto
+0 75 rlineto
+50 0 rlineto
+0 -75 rlineto
+0.5 0.2 0.0 setrgbcolor
+fill
+closepath
+
+5 setlinewidth
+stroke
+
+%%************ TEXTO
+/Times-Roman findfont % La fuente
+20 scalefont % Escalar 20 puntos la fuente
+setfont
+newpath 
+200 400 moveto 
+(Mi casucha!) show 
+stroke
+
+showpage % We're done
